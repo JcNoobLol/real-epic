@@ -1,0 +1,98 @@
+<head>
+  <title>Gamer's Squad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Blake gamurs" />
+  <meta property="og:description" content="Monke website" />
+  <meta property="og:image" content="https://files.jcmainclr.xyz/uploads/gamers.gif"/>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta name="theme-color" content="#666c75" />
+  <link rel="icon" href="https://files.jcmainclr.xyz/uploads/gamers.gif">
+</head>
+<body>
+  
+  <BR><BR>  <BR><BR>  <BR><BR>   
+  
+<div class="hidden">
+  <h1 class="suntukan" id="suntukan"></h1>
+ <h1 id="monke" class="monke"></h1>
+ <p class="con">Welcome to joseph site im back yeah but on youtube not yet.</p><br><br>
+ <a href="https://go.jcmainclr.xyz/gamers-monke">Disord Server</a> <a href="/rules">Rules</a> <a href="/wut" class="wut">Wut happen to you juseph?</a>
+</div>
+<div class="hidden">
+  <h1>Youtube video</h1>
+  <iframe src="https://epic-gamers.oki2.repl.co/video" class="video"></iframe>
+
+</div>
+</body>
+<style>
+  body{
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+  }
+  .hidden{
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 3s;
+    transform: translateY(-100%);
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  .btn{
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .con{font-size: 20px;}
+   a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+   }
+   a:hover{color: darkmagenta;}
+   .wut{
+    text-decoration:underline;
+   }
+   .video{
+    width: 400;
+    height: 400;
+    border: none;
+   }
+</style>
+<script>
+ let oberv = new IntersectionObserver((entires) => {
+        entires.forEach((entry) => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }else{
+                entry.target.classList.remove('show')
+            }
+        })
+    })
+    let hidden = document.querySelectorAll('.hidden')
+    hidden.forEach((el) =>  oberv.observe(el))
+  
+</script>
+<script>
+    let typed = new Typed(".monke",{
+    strings: ['  <button class="btn" onclick="e()">🐵</button>','Joseph alive','blaky -soul','<img src="https://cdn.discordapp.com/attachments/943425927172468796/1144911488612569178/image.png?ex=65a249ea&is=658fd4ea&hm=7d1bc1764d0a0326506a1de21b577c483f1206473cfa08a5345039176620cab0&" width="100">','Happy new year DSJHJGDSNHGRAHHH -kyle and jac'],
+    typeSpeed: 1,
+    backSpeed: 3,
+    loop: true,
+});
+function e(){
+ document.getElementById("suntukan").innerHTML = `One more day until 2024 (damn)`
+}
+console.log(`%c //Monke shit loader v1.1
+coded: monke kyle (kyle make this nice console log yeh) and jac 
+design: jacblakman
+http://go.jcmainclr.xyz/ 
+http://go.jcmainclr.xyz/kyle
+`, ' color: green')
+</script>
