@@ -3,7 +3,7 @@ let app = express()
 let path = require("path")
 console.log("kler:asim")
 app.get("/",(req,res) => { 
-     res.sendfile(path.join(__dirname,'src/index.html'))
+     res.sendfile(path.join(__dirname,'src/index.'))
 })
 app.get("/video",(req,res) => {
     res.sendfile(path.join(__dirname,'src/video.html'))
