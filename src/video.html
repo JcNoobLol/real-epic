@@ -34,7 +34,7 @@
 </style>
 <script>
     let videosContainer = document.getElementById('video')
-    fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBI2-TmQqrMrhmfja_xYoXtR42qmCxsy_M&channelId=UCfteCJCC4im_TEZsQ9_TlDA&part=snippet,id&order=date').then(res => res.json())
+    fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyBI2-TmQqrMrhmfja_xYoXtR42qmCxsy_M&channelId=UCfteCJCC4im_TEZsQ9_TlDA&part=snippet,id&order=date&maxResults=654').then(res => res.json())
     .then(data => { 
           const videos = data.items;
           videos.forEach(video => {
