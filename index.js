@@ -6,7 +6,7 @@ app.get("/",(req,res) => {
      res.sendfile(path.join(__dirname,'src/index.html'))
 })
 app.get("/video",(req,res) => {
-    res.sendfile(path.join(__dirname,'src/.html'))
+    res.sendfile(path.join(__dirname,'src/video.html'))
     })
 app.get("/rules",(req,res) => {
     res.sendfile(path.join(__dirname,'/src/rules.html'))
